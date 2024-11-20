@@ -9,6 +9,7 @@ import ViewEventPage from './pages/ViewEventPage';
 import AuthPage from './pages/AuthPage';
 import ProtectedRoute from './components/ProtectedRoute'; // Import the ProtectedRoute component
 import { AuthProvider } from './context/AuthContext';
+import EventDetails from './components/EventDetails';
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/add-event" element={<AddEventPage />} />
               <Route path="/view-event" element={<ViewEventPage />} />
+<<<<<<< Updated upstream
+=======
+              <Route path="/view-users" element={<UsersPage />} />
+              <Route path="/event-details/:id" element={<EventDetails />} />
+>>>>>>> Stashed changes
             </Route>
           </Routes>
         </div>
